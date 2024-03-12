@@ -194,6 +194,16 @@ return {
     end,
   },
 
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/fixcursorhold.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "alfaix/neotest-gtest",
+    },
+  },
+
   -- use mini.starter instead of alpha
   { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
