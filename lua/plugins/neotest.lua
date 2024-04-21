@@ -1,4 +1,6 @@
 return {
+    { "nvim-neotest/neotest-plenary" },
+    -- { "hfn92/cmake-gtest.nvim", dependencies = { "Civitasv/cmake-tools.nvim" } },
     {
         "nvim-neotest/neotest",
         dependencies = {
@@ -9,5 +11,6 @@ return {
             "nvim-neotest/nvim-nio",
             "alfaix/neotest-gtest",
         },
+        opts = { adapters = { "neotest-python", "neotest-gtest" } },
     },
 }
