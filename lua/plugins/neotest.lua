@@ -12,5 +12,14 @@ return {
             "alfaix/neotest-gtest",
         },
         opts = { adapters = { "neotest-python", "neotest-gtest" } },
+        keys = {
+            {
+                "<leader>tc",
+                function()
+                    require("neotest-gtest.executables.ui").configure_executable()
+                end,
+                desc = "configure gtest executable",
+            },
+        },
     },
 }
