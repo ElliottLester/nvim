@@ -11,6 +11,7 @@ return {
                 ["cuda"] = { "clang_format" },
                 ["proto"] = { "clang_format" },
                 ["lua"] = { "stylua" },
+                ["rust"] = { "rustfmt" },
                 -- ["fish"] = { "fish_indent" },
                 ["sh"] = { "shfmt" },
                 ["python"] = { "black" },
