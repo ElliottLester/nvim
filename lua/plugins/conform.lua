@@ -15,7 +15,7 @@ return {
                 -- ["fish"] = { "fish_indent" },
                 ["sh"] = { "shfmt" },
                 ["python"] = { "black" },
-                -- ["javascript"] = { "prettier" },
+                ["javascript"] = { "prettier" },
                 -- ["javascriptreact"] = { "prettier" },
                 -- ["typescript"] = { "prettier" },
                 -- ["typescriptreact"] = { "prettier" },
