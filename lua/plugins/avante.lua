@@ -5,17 +5,22 @@ return {
     opts = {
         -- add any opts here
         -- for example
-        provider = "openai",
-        openai = {
-            -- __inherited_from = "openai",
-            endpoint = "https://vm.lester.fi:5000/v1",
-            -- endpoint = "https://api.openai.com/v1",
-            -- model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)
-            model = "gpt-3.5-turbo",
-            -- timeout = 30000, -- timeout in milliseconds
-            -- temperature = 0, -- adjust if needed
-            -- max_tokens = 4096,
-            -- reasoning_effort = "high" -- only supported for reasoning models (o1, etc.)
+        provider = "text_generator",
+        vendors = {
+            text_generator = {
+                __inherited_from = "openai",
+                endpoint = "https://vm.lester.fi:5000/v1",
+                -- endpoint = "https://api.openai.com/v1",
+                -- model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)
+                -- model = "gpt-3.5-turbo",
+                model = "Qwen_Qwen2.5-Coder-32B-Instruct-8bit",
+                -- timeout = 30000, -- timeout in milliseconds
+                -- temperature = 0, -- adjust if needed
+                -- max_tokens = 4096,
+                -- reasoning_effort = "high" -- only supported for reasoning models (o1, etc.)
+                api_key_name = "",
+                disable_tools = true,
+            },
         },
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
