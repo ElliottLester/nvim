@@ -10,7 +10,7 @@ require("lazy").setup({
     spec = {
         -- add LazyVim and import its plugins
         { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-        { "ThePrimeagen/vim-be-good" },
+        -- { "ThePrimeagen/vim-be-good" },
         -- import any extras modules here
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.cmake" },
