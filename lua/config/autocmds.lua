@@ -3,12 +3,19 @@
 -- Add any additional autocmds here
 vim.g.clipboard = {
     name = "OSC 52",
+    -- copy = {
+    --     ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+    --     ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+    -- },
     copy = {
-        ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
-        ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+        ["+"] = { "tmux", "load-buffer", "-" },
+        ["*"] = { "tmux", "load-buffer", "-" },
     },
     paste = {
-        ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
-        ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+        ["+"] = { "tmux", "save-buffer", "-" },
+        ["*"] = { "tmux", "save-buffer", "-" },
+        -- paste = {
+        --   ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
+        --   ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
     },
 }
