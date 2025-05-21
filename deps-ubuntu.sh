@@ -8,4 +8,4 @@ source ~/.bashrc
 sudo apt update
 sudo apt upgrade
 nvm install 14
-sudo apt install build-essential fd-find fzf ripgrep python3-venv python3-pip unzip
+sudo apt install neovim build-essential fd-find fzf ripgrep python3-venv python3-pip unzip
