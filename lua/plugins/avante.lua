@@ -6,7 +6,7 @@ return {
         -- add any opts here
         -- for example
         provider = "text_generator",
-        vendors = {
+        providers = {
             text_generator = {
                 __inherited_from = "openai",
                 endpoint = "https://vm.lester.fi:5000/v1",
@@ -16,7 +16,7 @@ return {
                 -- temperature = 0, -- adjust if needed
                 -- max_tokens = 4096,
                 api_key_name = "",
-                disable_tools = true,
+                -- disable_tools = true,
             },
         },
     },
