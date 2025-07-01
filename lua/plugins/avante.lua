@@ -1,5 +1,5 @@
 return {
-    "yetone/avante.nvim",
+    "ElliottLester/avante.nvim",
     event = "VeryLazy",
     version = false, -- Set this to "*" to always pull the latest release version, or set it to false to update to the latest code changes.
     opts = {
@@ -61,4 +61,5 @@ return {
             ft = { "markdown", "Avante" },
         },
     },
+    branch = "local_hacks",
 }
