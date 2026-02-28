@@ -3,8 +3,24 @@ return {
     lazy = true,
     config = function()
         local opts = {
-            cmake_build_directory = "build/${variant:buildType}",
+            cmake_build_directory = function()
+                local osys = require("cmake-tools.osys")
+                if osys.iswin32 then
+                    return "out\\${variant:buildType}"
+                end
+                return "out/${variant:buildType}"
+            end, -- this is used to specify generate directory for cmake, allows macro expansion, can be a string or a function returning the string, relative to cwd.
             cmake_build_options = { "-j 20" },
+            cmake_runner = {
+                default_opts = {
+                    toggleterm = {
+                        close_on_exit = true,
+                    },
+                    terminal = {
+                        close_on_exit = true,
+                    },
+                },
+            },
         }
         require("cmake-tools").setup(opts)
         local wk = require("which-key")
