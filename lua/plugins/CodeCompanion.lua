@@ -51,7 +51,28 @@ return {
             },
         },
         interactions = {
-            chat = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
+            chat = {
+                adapter = "llama.cpp",
+                model = "Qwen3-Coder-Next-IQ4_NL",
+                tools = {
+                    ["file_search"] = { opts = { require_approval_before = false } },
+                    ["get_changed_files"] = { opts = { require_approval_before = false } },
+                    ["grep_search"] = { opts = { require_approval_before = false } },
+                    ["list_code_usages"] = { opts = { require_approval_before = false } },
+                    ["memory"] = { opts = { require_approval_before = false } },
+                    ["read_file"] = { opts = { require_approval_before = false } },
+                    opts = {
+                        default_tools = {
+                            "file_search",
+                            "get_changed_files",
+                            "grep_search",
+                            "list_code_usages",
+                            "memory",
+                            "read_file",
+                        },
+                    },
+                },
+            },
             inline = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
             cmd = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
             background = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
