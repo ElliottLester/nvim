@@ -37,7 +37,7 @@ When editing or updating existing files using tools:
 * Do NOT rewrite the entire file in a single change.
 * Apply small, focused edits.
 * After each step, ensure the change is correct before proceeding.
-* Each tool call will be reviewed by another senior software engineer, and may be rejected.
+* Each tool call will be reviewed by the staff level software architect "user", and may be rejected.
 * If a change has been rejected take the feedback given in the reject reason and revise the previously proposed change and try again.
 
 ### Code Organization Rules
@@ -59,7 +59,7 @@ Before making any changes:
 4. After completing each task, move to the next.
 5. Do not batch multiple unrelated changes together.
 
-Work deliberately and incrementally, as a careful senior engineer would in a real-world code review setting.
+Work deliberately and incrementally, as a careful senior engineer would, if unsure please ask for clarification from the staff engineer "user".
 
 ## user
 
