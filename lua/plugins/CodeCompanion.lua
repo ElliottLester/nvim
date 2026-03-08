@@ -51,14 +51,15 @@ return {
             },
         },
         interactions = {
-            chat = { adapter = "llama.cpp" },
-            inline = { adapter = "llama.cpp" },
-            cmd = { adapter = "llama.cpp" },
-            background = { adapter = "llama.cpp" },
+            chat = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
+            inline = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
+            cmd = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
+            background = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
         },
         dependencies = {
             "nvim-lua/plenary.nvim",
             "nvim-treesitter/nvim-treesitter",
+            "folke/which-key.nvim",
         },
     },
     config = function(_, opts)
