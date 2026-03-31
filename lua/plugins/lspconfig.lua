@@ -11,9 +11,9 @@ return {
                     "clangd",
                     "--background-index",
                     "--clang-tidy",
-                    "--header-insertion=iwyu",
+                    "--header-insertion=never",
                     "--completion-style=detailed",
-                    "--function-arg-placeholders",
+                    -- "--function-arg-placeholders",
                     "--fallback-style=Microsoft",
                 },
                 init_options = {
