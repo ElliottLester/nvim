@@ -42,6 +42,15 @@ return {
                     title = "CodeCompanion actions", -- The title of the action palette
                 },
             },
+            chat = {
+                window = {
+                    opts = {
+                        number = false, -- Disable line numbers
+                        relativenumber = false, -- Disable relative line numbers
+                        spell = true, -- Enable spell checking
+                    },
+                },
+            },
         },
         prompt_library = {
             markdown = {
@@ -73,6 +82,11 @@ return {
                     },
                 },
             },
+            -- chat = {
+            --     adapter = "anthropic",
+            --     model = "claude-sonnet-4.6",
+            -- },
+
             inline = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
             cmd = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
             background = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
