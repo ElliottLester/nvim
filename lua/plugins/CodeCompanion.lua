@@ -62,7 +62,7 @@ return {
         interactions = {
             chat = {
                 adapter = "llama.cpp",
-                model = "Qwen3-Coder-Next-IQ4_NL",
+                model = "Qwen3.5-122B-A10B-UD-IQ4_NL",
                 tools = {
                     ["file_search"] = { opts = { require_approval_before = false } },
                     ["get_changed_files"] = { opts = { require_approval_before = false } },
@@ -87,9 +87,9 @@ return {
             --     model = "claude-sonnet-4.6",
             -- },
 
-            inline = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
-            cmd = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
-            background = { adapter = "llama.cpp", model = "Qwen3-Coder-Next-IQ4_NL" },
+            inline = { adapter = "llama.cpp", model = "Qwen3.5-122B-A10B-UD-IQ4_NL" },
+            cmd = { adapter = "llama.cpp", model = "Qwen3.5-122B-A10B-UD-IQ4_NL" },
+            background = { adapter = "llama.cpp", model = "Qwen3.5-122B-A10B-UD-IQ4_NL" },
         },
         dependencies = {
             "nvim-lua/plenary.nvim",
