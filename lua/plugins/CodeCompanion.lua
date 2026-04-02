@@ -9,7 +9,7 @@ return {
                         name = "llama.cpp",
                         formatted_name = "llama.cpp",
                         env = {
-                            url = "http://llamacpp:5000", -- replace with your llama.cpp instance
+                            url = vim.env.LLAMA_CPP_URL or "http://localhost:5000", -- replace with your llama.cpp instance
                             api_key = "TERM",
                             chat_url = "/v1/chat/completions",
                             models_endpoint = "/v1/models",
