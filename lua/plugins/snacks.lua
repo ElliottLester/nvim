@@ -1,11 +1,11 @@
 return {
-  {
-    "folke/snacks.nvim",
-    opts = {
-      picker = {
-        ui_select = true,
-        enabled = true,
-      },
+    {
+        "folke/snacks.nvim",
+        opts = {
+            picker = {
+                ui_select = false,
+                enabled = true,
+            },
+        },
     },
-  },
 }

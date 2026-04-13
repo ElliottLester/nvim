@@ -118,6 +118,7 @@ return {
         local snacks_terminal_opts = {
             win = {
                 position = "right",
+                width = 0.5,
                 enter = false,
                 on_win = function(win)
                     -- Set up keymaps and cleanup for an arbitrary terminal
