@@ -1,6 +1,6 @@
 return {
     "olimorris/codecompanion.nvim",
-    enabled = false,
+    enabled = true,
     version = "^18.0.0",
     opts = {
         adapters = {
@@ -56,7 +56,7 @@ return {
                         },
                         schema = {
                             model = {
-                                default = "Qwen3-Coder-Next-IQ4_NL",
+                                default = "Gemma-4-31B-it-thinking",
                             },
                         },
                     })

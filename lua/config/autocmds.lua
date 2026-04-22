@@ -7,15 +7,15 @@ vim.g.clipboard = {
     --     ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
     --     ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
     -- },
-    copy = {
-        ["+"] = { "tmux", "load-buffer", "-" },
-        ["*"] = { "tmux", "load-buffer", "-" },
-    },
-    paste = {
-        ["+"] = { "tmux", "save-buffer", "-" },
-        ["*"] = { "tmux", "save-buffer", "-" },
-        -- paste = {
-        --   ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
-        --   ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
-    },
+    -- copy = {
+    --     ["+"] = { "tmux", "load-buffer", "-" },
+    --     ["*"] = { "tmux", "load-buffer", "-" },
+    -- },
+    -- paste = {
+    --     ["+"] = { "tmux", "save-buffer", "-" },
+    --     ["*"] = { "tmux", "save-buffer", "-" },
+    --     -- paste = {
+    --     --   ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
+    --     --   ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+    -- },
 }
