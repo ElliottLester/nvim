@@ -40,3 +40,8 @@ vim.keymap.set("n", "<leader>xd", toggle_diag_buf, {
 vim.keymap.set("n", "<leader>xD", toggle_diag_global, {
     desc = "Diagnostics: Toggle (Global)",
 })
+
+vim.keymap.set({ "n", "v" }, "d", '"_d', { noremap = true })
+vim.keymap.set({ "n", "v" }, "D", '"_D', { noremap = true })
+vim.keymap.set({ "n", "v" }, "c", '"_c', { noremap = true })
+vim.keymap.set({ "n", "v" }, "C", '"_C', { noremap = true })
